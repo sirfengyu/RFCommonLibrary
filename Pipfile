@@ -1,0 +1,17 @@
+[[source]]
+name = "pypi"
+#url = "https://pypi.org/simple"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+robotframework = "*"
+robotframework-excellibrary = "*"
+robotframework-selenium2library = "*"
+robotframework-databaselibrary = "*"
+robotframework-sikulilibrary = "*"
+
+[requires]
+python_version = "2.7"

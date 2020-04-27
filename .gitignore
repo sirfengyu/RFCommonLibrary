@@ -4,3 +4,4 @@ output.xml
 report.html
 poetry.lock
 .vscode
+Pipfile.lock

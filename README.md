@@ -2,33 +2,20 @@
 
 ## RF环境配置
 
-### python虚拟环境
-安装Poetry
+### pipenv虚拟环境
 
-```
-curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python3
-```
-或者
-```
-pip3 install --user poetry
-```
 
-让poetry使用python3
-
+安装
 ```
-poetry env use python3.7
+pip install pipenv
+pip install --user pipenv
+pip --python 2.7
 ```
 
-初始化环境
-```
-poetry init
-```
 
-激活虚拟环境
+默认镜像：
+>url = "https://pypi.org/simple"
 
-```
-poetry shell
-```
 国内镜像源
 >清华源： https://pypi.tuna.tsinghua.edu.cn/simple/
 阿里云： http://mirrors.aliyun.com/pypi/simple/
@@ -43,7 +30,7 @@ poetry shell
 - python 
 - Robot Framework Intellisense
 
-配置python编译器
+配置python
 python.pythonPath 
 
 配置rf相关
@@ -61,7 +48,23 @@ python.pythonPath
   "**/*.py"
 ]
 ```
+### pycharm配置
+配置python
+```
+poetry shell
+which python #配置为当前工程
+```
+安装rf插件
 
+### 依赖库安装
+```shell
+pipenv install robotframework
+pipenv install robotframework-excellibrary
+pipenv install robotframework-selenium2library
+pipenv install robotframework-requests
+pipenv install robotframework-databaselibrary
+pipenv install robotframework-sikulilibrary
+```
 
 ## Selenium2Library
 ## RequestLibrary
